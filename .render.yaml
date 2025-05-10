@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: apareloschool
+    env: docker
+    plan: free
+    autoDeploy: true
