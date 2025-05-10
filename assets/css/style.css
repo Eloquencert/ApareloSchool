@@ -1,0 +1,1033 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  background: rgb(249, 248, 253);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #edad36, #f15525);
+}
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.header {
+  padding: 12px 0px;
+}
+.header_container {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: bisque;
+  padding: 10px 15px;
+  border-radius: 75px;
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 40px 1px 100px rgb(87, 87, 87);
+}
+header .header_container nav ul {
+  display: flex;
+  padding-right: 300px;
+}
+header .header_container nav ul li + li {
+  margin-left: 40px;
+}
+header .header_container nav ul li {
+  transition: color 0.9s;
+  transition: font-weight 0.4s;
+  color: rgb(34, 37, 59);
+  font-size: 0.875em;
+  text-decoration: none;
+  padding-bottom: 3px;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  line-height: 104.4%;
+  letter-spacing: 0%;
+  font-weight: 400;
+}
+header .header_container nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(93, 93, 93);
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s;
+}
+header .header_container nav ul li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+header .header_container nav ul li:hover {
+  color: rgb(26, 26, 26);
+  font-weight: 500;
+}
+header .header_container nav ul li:active {
+  color: rgb(20, 20, 20);
+  font-weight: 600;
+}
+.header .header_container .logo {
+  width: 80px;
+  height: 30px;
+  border-radius: 34px;
+  background: rgb(241, 85, 37);
+  text-align: center;
+  align-content: center;
+  color: rgb(255, 255, 255);
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 104.4%;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+.header .header_container .link {
+  width: 80px;
+  height: 30px;
+  border-radius: 34px;
+  text-align: center;
+  align-content: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 200;
+  transition: 0.4s;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid rgb(241, 85, 37);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+}
+.header .header_container .link:hover,
+.link:focus {
+  color: rgb(241, 85, 37);
+  outline: 0;
+  font-weight: 400;
+  box-shadow: 0 0 40px 40px rgb(255, 255, 255) inset,
+    0px 0px 8px rgb(241, 85, 37);
+}
+.header .header_container .link:active {
+  transform: scale(0.95);
+}
+.third {
+  border-color: rgb(241, 85, 37);
+  color: #fff;
+  box-shadow: 0 0 40px 40px rgb(241, 85, 37) inset;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.header .header_container .link #vector-arrow-1 {
+  scale: 1.2;
+  padding-top: 4px;
+  padding-right: 4px;
+}
+main .container .main-window {
+  margin-top: 150px;
+}
+main #background-ellipse-1 {
+  position: absolute;
+  z-index: -1;
+  top: -388px;
+  left: 510px;
+}
+main .container .main-window .main-content {
+  display: flex;
+  margin-top: 70px;
+}
+main .container .main-window .main-content .block-1 .text-1 {
+  width: 365px;
+  color: rgb(34, 37, 59);
+  font-family: Montserrat;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+main .container .main-window .main-content .title-1 {
+  width: 638px;
+  font-family: Montserrat;
+  font-size: 2.875em;
+  font-weight: 500;
+  line-height: 46px;
+  letter-spacing: 0%;
+  margin-bottom: 26px;
+}
+main .container .main-window .main-content span {
+  color: rgb(241, 85, 37);
+}
+main .container .line {
+  margin-bottom: 26px;
+  width: 580px;
+  height: 1px;
+  background-color: rgba(222, 222, 222, 1);
+}
+main .container .main-window .main-content .block-1 button {
+  width: 320px;
+  height: 70px;
+  border-radius: 82px;
+  background: rgb(241, 85, 37);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 96.69%;
+  letter-spacing: -3%;
+  text-align: center;
+  margin-top: 26px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+main .container .main-window .main-content .block-1 button:active {
+  background: rgb(228, 79, 34);
+  box-shadow: 1px 1px 5px rgb(87, 87, 87);
+  transform: scale(0.98);
+}
+main .container .main-window .main-content .block-1 button #vector-arrow-2 {
+  width: 20px;
+  margin-left: 9px;
+  padding-top: 2px;
+}
+main .container .main-window .main-content .block-2 {
+  margin-left: 175px;
+}
+main .container .main-window .main-content .block-2 img {
+  width: 370px;
+}
+main .ellipseToDown {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 37px;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  transition: all 0.4s;
+}
+main .ellipseToDown:hover {
+  scale: 1.1;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px rgb(165, 165, 165);
+}
+main .ellipseToDown:active {
+  background-color: rgb(245, 245, 245);
+}
+main .ellipseToDown img {
+  width: 13px;
+  height: 18px;
+}
+main .content-about-technology {
+  margin-top: -30px;
+  background-image: url(../images/Subtract.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+main .content-about-technology .cont-1 {
+  padding-top: 130px;
+}
+main .content-about-technology .container .title-1 {
+  color: rgb(34, 37, 59);
+  font-size: 2.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .container .block-1 {
+  border-radius: 48px;
+  background: rgb(234, 242, 245);
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+main .content-about-technology .container .block-1 .block_image {
+  margin-left: 122px;
+}
+main .content-about-technology .container .block-1 .block_image img {
+  padding-top: 42px;
+}
+main .content-about-technology .container .block-1 .block_content {
+  margin-right: 104px;
+  width: 470px;
+  padding-top: 78px;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-1 {
+  display: flex;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-2 {
+  display: flex;
+  margin-top: 10px;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-3 {
+  display: flex;
+  margin-top: 10px;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-1
+  div:first-child {
+  background-color: rgb(80, 150, 255);
+  width: 310px;
+  height: 45px;
+  border-radius: 44px;
+  color: rgb(255, 255, 255);
+  font-size: 1.0625em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-1
+  div:last-child {
+  border-radius: 44px;
+  width: 89px;
+  height: 45px;
+  background: rgb(255, 179, 89);
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-left: 10px;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-2
+  div:first-child {
+  border-radius: 44px;
+  width: 151px;
+  height: 45px;
+  background: rgb(255, 111, 80);
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-2
+  div:last-child {
+  border-radius: 44px;
+  width: 277px;
+  height: 45px;
+  background: rgb(75, 208, 113);
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-left: 10px;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-3
+  div:first-child {
+  border-radius: 44px;
+  width: 265px;
+  height: 45px;
+  background: rgb(80, 192, 255);
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-3
+  div:nth-child(2) {
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 44px;
+  width: 95px;
+  height: 45px;
+  background: rgb(75, 119, 185);
+  margin-left: 10px;
+}
+main
+  .content-about-technology
+  .container
+  .block-1
+  .block_content
+  .block-line-3
+  div:last-child {
+  color: rgb(255, 255, 255);
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  height: 45px;
+  width: 93px;
+  border-radius: 44px;
+  background: rgb(175, 147, 255);
+  margin-left: 10px;
+}
+main .content-about-technology .container .block-1 .block-content {
+  margin-top: 26px;
+}
+main .content-about-technology .cont-2 {
+  margin-top: 90px;
+}
+main .content-about-technology .cont-2 .title-3 {
+  color: rgb(34, 37, 59);
+  font-size: 2.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 {
+  margin-top: 30px;
+}
+.block-2 {
+  padding: 20px;
+  border-radius: 10px;
+}
+main .content-about-technology .cont-2 .block-2 .block-3 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+main .content-about-technology .cont-2 .block-2 .block-4 {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin-bottom: 40px;
+}
+
+.blocks {
+  border-radius: 30px;
+  background: rgb(234, 242, 245);
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 270px;
+  height: 254px;
+  display: grid;
+  place-items: center;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  cursor: pointer;
+}
+.blocks:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+main .content-about-technology .cont-2 .block-2 .blocks .title-4 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 .blocks .title-5 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 .blocks .title-6 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 .blocks .title-7 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 .blocks .title-8 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 .blocks .title-9 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 .blocks .title-10 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 18.5px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .content-about-technology .cont-2 .block-2 .blocks p {
+  color: rgb(34, 37, 59);
+  font-size: 0.8125em;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 0;
+}
+main #background-ellipse-2 {
+  position: absolute;
+  z-index: -1;
+  top: 1300px;
+  left: 5%;
+}
+main .how-learn .container .title-11 {
+  margin-top: 50px;
+  color: rgb(34, 37, 59);
+  font-size: 2.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 26px;
+}
+main .how-learn .container p:nth-child(2) {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  width: 640px;
+  margin: 0 auto;
+}
+main .how-learn .container div div:first-child img {
+  filter: drop-shadow(0px 40px 40px rgba(25, 26, 38, 0.38));
+}
+main .how-learn .container .block-5 {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+}
+main .how-learn .container .block-5 .block-6 #img-laptop {
+  position: absolute;
+  position: relative;
+  z-index: -1;
+  left: 50%;
+  translate: -50%;
+}
+main .how-learn .container .block-5 .block-6 .btn-play {
+  position: absolute;
+  z-index: 1;
+  top: 275%;
+  left: 50%;
+  translate: -12% -1%;
+}
+main .how-learn .container .block-5 .block-6 .btn-play #img-button-play {
+  padding-left: 20px;
+  transition: 0.4s ease;
+}
+main .how-learn .container .block-5 .block-6 .btn-play #img-button-play:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+main .how-learn .container .block-5 .block-6 .btn-play p {
+  text-align: left;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 96.69%;
+  letter-spacing: -3%;
+  text-align: left;
+  padding-right: 10px;
+  padding-top: 5px;
+}
+main .other {
+  margin-top: 50px;
+}
+main .other .courses {
+  width: 100%;
+  border-radius: 50px;
+  background-color: #ffffff;
+  display: flex;
+}
+.op {
+  opacity: 100;
+}
+main .other .courses .line-1 {
+  width: 1px;
+  height: 250px;
+  background: rgb(234, 242, 245);
+  margin-right: 58px;
+  margin-bottom: 35px;
+}
+main .other .courses .line-2 {
+  width: 1px;
+  height: 250px;
+  background: rgb(234, 242, 245);
+  margin-right: 50px;
+  margin-bottom: 35px;
+}
+main .other .courses div:first-child {
+  margin-left: 53px;
+  margin-right: 23px;
+}
+main .other .courses div .number {
+  color: rgb(241, 85, 37);
+  font-family: Montserrat;
+  font-size: 4.8125em;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+main .other .courses div p {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 282px;
+}
+main .other .courses div .title-12 {
+  color: rgb(34, 37, 59);
+  font-size: 1.5em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 309px;
+}
+main .other .courses div {
+  margin-top: 56px;
+  /* opacity: 0; */
+  /* transition: opacity .5s; */
+}
+main .other .block-support {
+  margin-top: 26px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 80px;
+}
+main .other .block-support .block-content-1 {
+  display: flex;
+  margin-top: 50px;
+  padding-top: 90px;
+}
+
+main .other .block-support .block-content-1 .block-image-1 {
+  background-color: rgb(234, 242, 245);
+  width: 400px;
+  height: 313px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+main .other .block-support .block-content-1 .block-image-1 img {
+  width: 350px;
+  height: 280px;
+}
+main .other .block-support .block-content-1 .block-text-1 .title-13 {
+  color: rgb(34, 37, 59);
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+main .other .block-support .block-content-1 .block-text-1 {
+  border-radius: 40px;
+  background: rgb(234, 242, 245);
+  width: 730px;
+}
+main .other .block-support .block-content-1 .block-text-1 p {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 550px;
+}
+main .other .block-support .block-content-1 .block-text-1 .block-content-3 {
+  margin-left: 100px;
+  margin-top: 54px;
+}
+main .other .block-support .block-content-2 {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 90px;
+}
+main .other .block-support .block-content-2 .block-text-2 {
+  border-radius: 40px;
+  background: rgb(234, 242, 245);
+  width: 730px;
+  margin-right: 30px;
+}
+main .other .block-support .block-content-2 .block-text-2 .block-content-4 {
+  margin-left: 100px;
+  margin-top: 54px;
+}
+main
+  .other
+  .block-support
+  .block-content-2
+  .block-text-2
+  .block-content-4
+  .title-13 {
+  color: rgb(34, 37, 59);
+  font-size: 2em;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+main .other .block-support .block-content-2 .block-text-2 .block-content-4 p {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 500px;
+}
+main .other .block-support .block-content-2 .block-image-2 {
+  width: 400px;
+  background-color: #eaf2f5;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+}
+main #background-ellipse-3 {
+  position: absolute;
+  z-index: -1;
+  top: 3700px;
+  left: 5%;
+}
+main .price-courses {
+  margin-top: 90px;
+}
+main .price-courses .container .block-text-price {
+  display: flex;
+  justify-content: space-between;
+}
+main .price-courses .container .title-13 {
+  color: rgb(34, 37, 59);
+  font-size: 2.875em;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+main .price-courses .container .block-text-price .blocks-icons-1 {
+  display: flex;
+  margin-top: 36px;
+  width: 390px;
+}
+main .price-courses .container .block-text-price .blocks-icons-2 {
+  display: flex;
+  margin-top: 36px;
+  width: 279px;
+}
+main .price-courses .container .block-text-price .blocks-icons-3 {
+  display: flex;
+  margin-top: 36px;
+  width: 386px;
+}
+main .price-courses .container .block-text-price .blocks-icons-1 .text-1 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 300px;
+}
+main .price-courses .container .block-text-price .blocks-icons-2 .text-2 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 183px;
+}
+main .price-courses .container .block-text-price .blocks-icons-3 .text-3 {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 300px;
+}
+main .price-courses .container .block-text-price .blocks-icons-1 img {
+  margin-right: 20px;
+}
+main .price-courses .container .block-text-price .blocks-icons-2 img {
+  margin-right: 20px;
+}
+main .price-courses .container .block-text-price .blocks-icons-3 img {
+  margin-right: 20px;
+}
+main .price-courses .container .table-price {
+  border-radius: 30px;
+  background: rgb(255, 255, 255);
+  width: 100%;
+}
+main .price-courses .container .table-price div {
+  margin: 39px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+th {
+  background-color: transparent;
+}
+tbody tr:nth-child(2n + 1) {
+  background-color: #f3f3f3;
+}
+main .price-courses .container .text-gray {
+  color: rgb(142, 142, 142);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 53px;
+  margin-top: 25px;
+}
+main .price-courses .container .block-emergency {
+  background: #eaf2f5;
+  width: 100%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 43px;
+  margin-top: 35px;
+}
+main .price-courses .container .block-emergency img {
+  margin-left: 54px;
+}
+main .price-courses .container .block-emergency button {
+  margin-right: 50px;
+}
+main .price-courses .container .block-emergency button img {
+  width: 17px;
+  margin-left: 7px;
+  margin-top: 3px;
+}
+main .price-courses .container .block-emergency p {
+  color: rgb(34, 37, 59);
+  font-size: 1.0625em;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 600px;
+}
+main .price-courses .container .block-emergency button {
+  width: 311px;
+  height: 70px;
+  border-radius: 82px;
+  background: rgb(241, 85, 37);
+  color: rgb(255, 255, 255);
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 96.69%;
+  letter-spacing: -3%;
+  text-align: center;
+  transition: 0.2s ease;
+}
+main .price-courses .container .block-emergency button:active {
+  background: rgb(228, 79, 34);
+  box-shadow: 1px 1px 5px rgb(87, 87, 87);
+  transform: scale(0.98);
+}
+main footer {
+  margin-top: 65px;
+}
+main footer .container .footer-link-2 {
+  display: flex;
+  margin-bottom: 35px;
+  justify-content: space-between;
+}
+main footer .container .footer-link-2 .block-1 .footer-logo {
+  color: rgb(34, 37, 59);
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+main footer .container .footer-link-2 .block-1 .footer-link-icon {
+  margin-bottom: 35px;
+}
+main footer .container .footer-link-2 .block-1 .footer-link-icon img {
+  transition: 0.6s ease;
+}
+main footer .container .footer-link-2 .block-1 .footer-link-icon img:hover {
+  scale: 1.1;
+}
+main footer .container .footer-link-2 .block-1 .footer-logo p {
+  color: rgb(142, 142, 142);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: 7px;
+}
+main footer .container .footer-link-2 .block-1 .footer-gmail {
+  color: rgb(34, 37, 59);
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+main footer .container .footer-link-2 .block-2 {
+  color: rgb(34, 37, 59);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 104.4%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-right: 390px;
+}
+main footer .container .footer-link-2 .block-2 ul li {
+  margin-bottom: 25px;
+  color: rgb(34, 37, 59);
+  font-size: 0.875em;
+  font-weight: 400;
+  line-height: 104.4%;
+  letter-spacing: 0%;
+  text-align: left;
+  transition: 0.6s ease;
+}
+main footer .container .footer-link-2 .block-2 ul li:hover {
+  cursor: pointer;
+  color: rgb(95, 95, 95);
+  font-weight: 500;
+}
+main footer .container .footer-link-2 .block-2 ul li:last-child {
+  margin-bottom: 0px;
+}
+main footer .container .line-4 {
+  width: 100%;
+  border: 1px solid rgb(216, 216, 216);
+}
+main footer .container .footer-link-3 {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main footer .container .footer-link-3 .gray {
+  color: rgb(142, 142, 142);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+main footer .container .footer-link-3 .orange-1 {
+  margin-right: -149px;
+}
+main footer .container .footer-link-3 .orange-1,
+.orange-2 {
+  color: rgb(241, 85, 37);
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0%;
+  text-align: left;
+}
